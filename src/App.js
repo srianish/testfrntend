@@ -14,10 +14,15 @@ import YourTests from "./components/YourTests/YourTests";
 import LeaderBoard from "./components/LeaderBoard/LeaderBoard";
 import PurchaseCoins from "./components/Payments/PurchaseCoins";
 import AdminDash from "./components/Admin/AdminDash";
-
+import Context from "./Context"
+import { useState } from "react";
 import TopicGrid from "./components/Exams/TopicGrid";
 function App(){
-  return <BrowserRouter>
+  
+  const [tc, setTC] = useState("")
+
+  return <Context.Provider value={ [tc, setTC]}>
+    <BrowserRouter>
             <NavBar />
             <Routes>
                   <Route path="/login"  element={<Login/>}/>
@@ -37,5 +42,6 @@ function App(){
                   <Route path="/topic" element={<TopicGrid/>}/>
             </Routes>
   </BrowserRouter>
+  </Context.Provider>
 }
 export default App;
