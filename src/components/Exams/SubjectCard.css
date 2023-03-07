@@ -1,0 +1,10 @@
+.s-cont {
+    position : fixed;
+   top : 10%;
+   bottom : 10%;
+   left : 35%;
+    right : 35%;
+    background-color:  rgb(146, 230, 188);
+    text-align: center;
+    border-radius: 5px;
+}

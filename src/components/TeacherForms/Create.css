@@ -1,0 +1,24 @@
+.crt {
+    position: absolute;
+    top : 50px;
+    left : 0px;
+    right : 0px;
+    height: 300px;  
+    background-color: rgb(61, 47, 47);
+    text-align: center ;
+    z-index: -1;
+}
+.btn2 {
+    position :  relative;
+    top : 120px;
+}
+.h111 {
+    position: absolute;    
+    left : 10%;
+    right : 60%;
+    top : 360px;
+    z-index: -1;
+    
+
+
+}

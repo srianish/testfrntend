@@ -1,0 +1,48 @@
+.q-cont {
+    position : fixed;
+   top : 10%;
+   bottom : 10%;
+   left : 10%;
+    right : 30%;
+    background-color:  rgb(146, 230, 188);
+    text-align: center;
+    border-radius: 5px;
+}
+.option {
+    position : relative;
+    
+    background-color: rgb(76, 255, 195);
+    z-index: 1;
+    height : 50px;
+    border-radius: 5px;
+    text-align: left;
+
+    
+}
+.prev {
+    position : absolute;
+    left : 3%;
+    bottom : 3%;
+}
+.next {
+    position : absolute;
+    right : 3%;
+    bottom : 3%;
+}
+.fns {
+    position : fixed;
+    top : 80%;
+    bottom : 10%;
+    left : 75%;
+    right : 10%;
+    background-color:  rgb(146, 230, 188);
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.fnsb {
+    position : relative;
+    top : 15%;
+    width : 70%;
+
+}

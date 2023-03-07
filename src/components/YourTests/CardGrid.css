@@ -1,0 +1,15 @@
+.grid-cont2 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap : 10px;
+    justify-content: space-evenly;
+    left : 40%;
+    right : 10%;
+    top : 60px;
+    height : 360px;
+    z-index: -1;
+    
+
+
+}

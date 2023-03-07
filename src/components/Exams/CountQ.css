@@ -1,0 +1,14 @@
+
+.count-cont {
+   position : fixed;
+   top : 10%;
+   bottom : 50%;
+   left : 75%;
+    right : 10%;
+    background-color:  rgb(146, 230, 188);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    overflow-y :scroll;
+    
+}

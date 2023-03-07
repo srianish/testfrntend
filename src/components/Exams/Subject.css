@@ -1,0 +1,11 @@
+.ss-card {
+    position :relative;
+    text-align: center;
+    width : 90%;
+    background-color:rgb(179, 243, 196);
+    height : 30px;
+    border-radius: 5px;
+   
+
+
+}

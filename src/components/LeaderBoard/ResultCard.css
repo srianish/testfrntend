@@ -1,0 +1,12 @@
+.rst {
+    
+        position : fixed;
+        top : 120px;
+        left :5%;
+        right :70%;
+        z-index : -1;
+        background-color: aquamarine;
+        text-align: center;
+        border-radius: 5px;
+
+}

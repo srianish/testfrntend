@@ -1,0 +1,14 @@
+.grid-conti-t {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap : 10px;
+    justify-content: space-evenly;
+    
+    left : 30%;
+    right : 30%;
+    top : 100px;;
+    z-index: -1;
+
+
+}
