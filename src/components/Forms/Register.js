@@ -1,15 +1,14 @@
 import "./Forms.css";
 import axios from "axios";
 import { useState } from "react";
-import { useContext } from "react";
-import Context from "../../Context";
-function Register(){
+
+function Register(props){
     const [name , setName] = useState("")
     const [email , setEmail] = useState("")
     const [password , setPassword] = useState("")
     const [role, setRole ]= useState({student : false, teacher : false, admin : false})
 
-    const [tc,setTC] = useContext(Context)
+    
     return    <div className="container">
         <h1>Please Register</h1>
         <input type="text" placeholder="Enter Your Name" className="f-input" value={name} onChange={(e)=>setName(e.target.value)}/>
@@ -37,9 +36,12 @@ function Register(){
     password:password,
     role: role.role
 }).then((res)=>{
-    setTC(res.token);
-    console.log("tc = "+tc);
-    console.log(res)})
+    
+    
+    console.log(res)
+}
+    )
+    
   .catch((err)=>console.log(err))}>Register</button>
     </div>
     

@@ -14,19 +14,25 @@ import YourTests from "./components/YourTests/YourTests";
 import LeaderBoard from "./components/LeaderBoard/LeaderBoard";
 import PurchaseCoins from "./components/Payments/PurchaseCoins";
 import AdminDash from "./components/Admin/AdminDash";
-import Context from "./Context"
+import axios from "axios";
+
 import { useState } from "react";
 import TopicGrid from "./components/Exams/TopicGrid";
 function App(){
   
-  const [tc, setTC] = useState("")
-
-  return <Context.Provider value={ [tc, setTC]}>
-    <BrowserRouter>
+ 
+  axios.interceptors.request.use(
+    config=>{
+      config.headers.authorization = `Bearer ${accesstoken}`
+      return config
+    }
+  )
+ 
+  return     <BrowserRouter>
             <NavBar />
             <Routes>
-                  <Route path="/login"  element={<Login/>}/>
-                  <Route path="/register" element={<Register/>}/>
+                  <Route path="/login"  element={<Login/>}  tc = {tc } setTC = {setTC}/>
+                  <Route path="/register" element={<Register/>}  tc = {tc } setTC = {setTC}/>
                   <Route path="/forgot" element={<Forgot/>} />
                   <Route path="/home" element={<CardGrid/>} />
                   <Route path="/subjects" element={<SubjectCard/>} />
@@ -42,6 +48,6 @@ function App(){
                   <Route path="/topic" element={<TopicGrid/>}/>
             </Routes>
   </BrowserRouter>
-  </Context.Provider>
+
 }
 export default App;

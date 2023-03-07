@@ -1,9 +1,8 @@
 import "./Forms.css";
 import {Link} from "react-router-dom";
-import { useContext } from "react";
-import Context from "../../Context";
-function Login(){
-    const [tc,setTC] = useContext(Context)
+
+function Login(props){
+   
     return    <div className="container">
         <h1>Please Login</h1>
         <input type="email" placeholder="Enter Email" className="f-input"/>
